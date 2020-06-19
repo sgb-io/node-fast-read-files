@@ -7,6 +7,15 @@ const start = performance.now()
 
 const round = (num) => Math.round(num * 100) / 100
 
+function isPrime(num) {
+    if(num < 2) return false;
+    for (var i = 2; i < num; i++) {
+        if(num%i==0)
+            return false;
+    }
+    return true;
+}
+
 const readAllFiles = () => {
     const filePaths = []
     for (i = 0; i < 251; i++) {
