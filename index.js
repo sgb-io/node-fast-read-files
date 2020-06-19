@@ -7,7 +7,7 @@ const start = performance.now()
 
 const round = (num) => Math.round(num * 100) / 100
 
-// Adding this just to demonstrate codehawk-bot in a PR. It's not actually used.
+// Adding this just to demonstrate codehawk-bot in a PR. It's not actually used!
 function getPrimes(max) {
     var sieve = [], i, j, primes = [];
     for (i = 2; i <= max; ++i) {
