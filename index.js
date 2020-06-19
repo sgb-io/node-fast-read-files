@@ -12,6 +12,8 @@ const readAllFiles = () => {
     for (i = 0; i < 251; i++) {
         filePaths.push(process.cwd() + `/files/File${i.toString().padStart(3, '0')}.ts`)
     }
+    
+    console.log('some fake change');
 
     return filePaths.reduce((dict, parsedFile) => {
         const relativeFullPath = parsedFile.replace(cwd, '')
